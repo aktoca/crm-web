@@ -11,7 +11,7 @@ get "/" do
 end 
 
 get "/contacts" do
-
+  erb :contacts
 end
 
 get "/contacts/new" do
@@ -40,5 +40,7 @@ get "/exit" do
 end
 
 post '/contacts' do
-  puts params
+  new_contact = [params[:first_name],params[:last_name],params[:email],params[:notes]]
+  @@rolodex.add_contact(new_contact)
+  redirect to('/contacts')
 end

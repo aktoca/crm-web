@@ -6,9 +6,8 @@ class Rolodex
 
   def add_contact(contact)
     #input given as array 
-    new_contact = Contact.new(input)
+    new_contact = Contact.new(contact)
     @contacts << new_contact
-    @contacts << contact
   end
 
   def modify_contact(info_type, new_info, who)

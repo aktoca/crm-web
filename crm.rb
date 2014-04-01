@@ -18,3 +18,7 @@ end
 get "/modify_contact" do
   "Modify existing contact"
 end
+
+get "/one_contact" do
+  "View one contact"
+end

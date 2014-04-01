@@ -11,14 +11,27 @@ get "/contacts" do
   "here are your contacts (hard code)"
 end
 
-get "/add_contact" do
+get "/contacts/new" do
   "Make a contact"
 end
 
-get "/modify_contact" do
+get "/contacts/edit" do
   "Modify existing contact"
 end
 
-get "/one_contact" do
+get "/contacts/view" do
   "View one contact"
 end
+
+get "/contacts/attribute" do
+  "View all contacts by one attribute"
+end
+
+git "/contacts/delete" do
+  "Delete a contact"
+end
+
+git "/exit" do
+  "Do I even need this?"
+end
+

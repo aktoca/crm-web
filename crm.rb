@@ -27,11 +27,11 @@ get "/contacts/attribute" do
   "View all contacts by one attribute"
 end
 
-git "/contacts/delete" do
+get "/contacts/delete" do
   "Delete a contact"
 end
 
-git "/exit" do
+get "/exit" do
   "Do I even need this?"
 end
 

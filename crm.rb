@@ -3,5 +3,5 @@ require 'sinatra'
 @contacts = []
 
 get "/" do
-  "Main Menu"
+  erb :index
 end 

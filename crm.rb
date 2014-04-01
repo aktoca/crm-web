@@ -18,6 +18,7 @@ get "/contacts/new" do
   erb :new_contact
 end
 
+
 get "/contacts/edit" do
   "Modify existing contact"
 end
@@ -38,3 +39,6 @@ get "/exit" do
   "Do I even need this?"
 end
 
+post '/contacts' do
+  puts params
+end

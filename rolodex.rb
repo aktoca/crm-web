@@ -1,5 +1,4 @@
 class Rolodex
-  attr_reader :contacts
   
   def initialize
     @contacts = []
@@ -7,8 +6,8 @@ class Rolodex
 
   def add_contact(contact)
     #input given as array 
-    #new_contact = .new(input)
-    #@contacts << new_contact
+    new_contact = Contact.new(input)
+    @contacts << new_contact
     @contacts << contact
   end
 

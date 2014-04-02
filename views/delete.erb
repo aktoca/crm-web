@@ -1,0 +1,23 @@
+<h1>Delete a Contact</h1>
+
+<ul>
+  <% @@rolodex.display_all_contacts.each do |contact| %>
+  <li><%= contact.first_name %> <%= contact.last_name %></li>
+  <% end %>
+</ul>
+
+Which contact would you like to delete?<br>
+<form action="/contacts" method="post">
+  Last name: <input type="text" name="last_name"><br>
+  <input type="submit" name="Submit">
+</form>
+
+
+<a href="/">Back to Main Menu</a>
+
+  <% info_type = [params[:last_name]]%>
+  <%who = [params[:text]]%>
+  <% @@rolodex.delete_contact(info_type, who) %>
+  <p>Contact deleted</p>
+
+<a href="/">Back to Main Menu</a>

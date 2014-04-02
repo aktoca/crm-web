@@ -2,8 +2,8 @@ require_relative 'contact'
 require_relative 'rolodex'
 require 'sinatra'
 
-@@rolodex = Rolodex.new
 @contacts = []
+@@rolodex = Rolodex.new
 
 get "/" do
   @crm_app_name = "the new CRM"
@@ -32,7 +32,8 @@ get "/contacts/attribute" do
 end
 
 get "/contacts/delete" do
-  "Delete a contact"
+
+  erb :delete
 end
 
 get "/exit" do

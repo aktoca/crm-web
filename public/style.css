@@ -65,7 +65,7 @@ html {
 h1, h2,h3,h4,h6, p, a
 {
     font-family: arial,Helvetica,Arial, sans-serif;
-    color: #710101;
+    color: #002200;
 }
 
 
@@ -94,18 +94,20 @@ header h4{
   padding-top: 10px;
 }
 
+
 nav {
-  display: block;
-  position: relative;
-  float: right;
-  margin: 50px;
-  margin-right: 100px;
+  border-bottom: 1px double #191919;
+  bottom: 5%;
+  position: absolute;
+  width: 100%;
+  background-color: #065A02;
 }
+
 nav li{
-  
   display: inline-block;
   margin: 10px;
-  float: right;
+  width: 30%;
+  text-align: center;
 }
 
 hr {
@@ -129,7 +131,6 @@ hr {
 .erb p {
   font-size: 25px;
   padding: 10px;
-  background-color: white;
   text-align: center;
 }
 
@@ -146,7 +147,7 @@ hr {
   padding: 10px;
   margin: 15px;
   width: 50%;
-  background-color: #A66844;
+  background-color: #BF8136;
   color: #DFAA36;
   text-align: left;
   border-top-right-radius: 100px;
@@ -161,15 +162,20 @@ hr {
 }
 a {
     text-decoration: none;
-  color: #002200;
+  color: black;
   
 }
 footer {
+  background: url(cartographer.png) center center fixed;
     position: absolute;
   bottom: 0;
   background-color: #065A02;
   /*opacity: 0.6;*/
   width: 100%;
   padding: 5px;
+  height: 5%; 
+}
 
+footer p {
+  float: right;
 }

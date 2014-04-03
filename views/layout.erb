@@ -12,16 +12,17 @@
       <h4 id="phone">555-555-5555</h4>
     </header>
     <hr>
-    <nav>
+
+    <div class='erb'>
+      <%= yield %>
+    </div>
+        <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <div class='erb'>
-      <%= yield %>
-    </div>
     <footer>
       <p>Please don't 
         <a href="#">contact us</a>

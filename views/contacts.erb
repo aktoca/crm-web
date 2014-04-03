@@ -1,8 +1,9 @@
 <h1>All Contact</h1>
-
+<div id=view>
 <ul>
   <% @@rolodex.display_all_contacts.each do |contact| %>
   <li><%= contact.first_name %> <%= contact.last_name %></li>
   <% end %>
 </ul>
 <a href="/">Back to Main Menu</a>
+</div>

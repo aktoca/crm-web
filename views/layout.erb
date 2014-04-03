@@ -1,14 +1,27 @@
 <!DOCTPYE html>
 
-<<html>
+<html>
   <head>
-    <title></title>
+    <title>This is a CRM</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
   </head>
   <body>
     <header>
-      <h4>Bullshit</h4>
+      <img src="/ant.jpg" alt="Ant"> 
+      <h1>AdvCRM</h1>
+      <h4 id="phone">555-555-5555</h4>
     </header>
-    <%= yield %>
+    <hr>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class='erb'>
+      <%= yield %>
+    </div>
     <footer>
       <p>Please don't 
         <a href="#">contact us</a>

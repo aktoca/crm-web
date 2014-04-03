@@ -6,7 +6,7 @@ require 'sinatra'
 @@rolodex = Rolodex.new
 
 get "/" do
-  @crm_app_name = "the new CRM"
+  @crm_app_name = "The new CRM"
   erb :index
 end 
 
@@ -19,11 +19,11 @@ get "/contacts/new" do
 end
 
 
-get "/contacts/edit" do
+get "/contacts/:id/edit" do
   "Modify existing contact"
 end
 
-get "/contacts/view" do
+get "/contacts/:id/view" do
   "View one contact"
 end
 
@@ -31,10 +31,11 @@ get "/contacts/attribute" do
   "View all contacts by one attribute"
 end
 
-get "/contacts/delete" do
-
+get "/contacts/:id/delete" do
   erb :delete
 end
+
+
 
 get "/exit" do
   "Do I even need this?"
@@ -43,5 +44,12 @@ end
 post '/contacts' do
   new_contact = [params[:first_name],params[:last_name],params[:email],params[:notes]]
   @@rolodex.add_contact(new_contact)
+  redirect to('/contacts')
+end
+
+delete '/contacts/:id' do
+  info_type = '0'
+  who = params[:id]
+  @@rolodex.delete_contact(info_type, who) 
   redirect to('/contacts')
 end

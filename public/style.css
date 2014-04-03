@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  /*http://cthoward.wordpress.com/powerpoint/powerpoint-backgrounds/ppt-gallery1/*/
+  background-color: white;  
+  -webkit-background-size: cover; /*#chrom and safiri*/
+  -moz-background-size: c; /*#firefox*/
+  -o-background-size: cover; /*#mozilla*/
+  background-size: cover; /*#everythingelse - IE (but maybe not ie8)*/*/
+}
+
+h1, h2,h3,h4,h6, p, a
+{
+    font-family: arial,Helvetica,Arial, sans-serif;
+    color: #710101;
+}
+
+
+header {  
+  width:100%;
+  position:fixed;
+  top:0px;
+}
+
+header img {
+  display: inline-block;
+
+}
+
+header h1 { 
+  display: inline-block;
+  font-size: 5ex;
+  margin-top: -8%;
+  margin-left: -20px;
+  font-family: Garamond, palatino, sans-serif;
+}
+
+header h4{
+  float: right;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+nav {
+  display: block;
+  position: relative;
+  float: right;
+  margin: 50px;
+  margin-right: 100px;
+}
+nav li{
+  
+  display: inline-block;
+  margin: 10px;
+  float: right;
+}
+
+hr {
+  position: static;
+}
+.erb {
+  position: relative;
+  top: 120px;
+  margin: 10px;
+  width: 920px;
+  left: 10%;
+  padding: 20px;
+  /*background-color: #065A02;*/
+}
+.erb h1 {
+  font-size: 35px;
+  margin-bottom: 5px;
+  
+}
+
+.erb p {
+  font-size: 25px;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.erb li {
+  position: relative;
+  width: 65%;
+  /*list-style-type: square;*/
+  padding: 2px;
+  left: 20%;
+
+}
+
+#menu li {
+  padding: 10px;
+  margin: 15px;
+  width: 50%;
+  background-color: #A66844;
+  color: #DFAA36;
+  text-align: left;
+  border-top-right-radius: 100px;
+  border: 2px  black;
+  border-bottom-left-radius: 20px;
+
+}
+
+#menu{
+  /*background-color: #DFAA36;*/
+
+}
+a {
+    text-decoration: none;
+  color: #002200;
+  
+}
+footer {
+    position: absolute;
+  bottom: 0;
+  background-color: #065A02;
+  /*opacity: 0.6;*/
+  width: 100%;
+  padding: 5px;
+
+}

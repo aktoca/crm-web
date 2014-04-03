@@ -1,12 +1,13 @@
-<h1>Welcome to <%= @crm_app_name %></h1>
-<p>Main Menu</p>
-<ul>
-  <li><a href="/contacts/new">Add a Contact</a></li>
-  <li><a href="/contacts/edit">Modify a Contact</a></li>
-  <li><a href="/contacts">Display All Contacts</a></li>
-  <li><a href="/contacts/view">Display One Contact</a></li>
-  <li><a href="/contacts/attribute">Dispaly Contacts by Attribute</a></li>
-  <li><a href="/contacts/delete">Delete a Contact</a></li>
-  <li><a href="/exit">Exit?</a></li>
-</ul>
 
+<h1><%= @crm_app_name %></h1>
+<div id="menu">
+  <p>Main Menu</p>
+    <ul>
+      <li><a href="/contacts/new">Add a Contact</a></li>
+      <li><a href="/contacts/:id/edit">Modify a Contact</a></li>
+      <li><a href="/contacts">Display All Contacts</a></li>
+      <li><a href="/contacts/view">Display One Contact</a></li>
+      <li><a href="/contacts/attribute">Dispaly Contacts by Attribute</a></li>
+      <li><a href="/contacts/:id/delete">Delete a Contact</a></li>
+    </ul>
+</div>

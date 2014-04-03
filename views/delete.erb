@@ -6,18 +6,10 @@
   <% end %>
 </ul>
 
-Which contact would you like to delete?<br>
-<form action="/contacts" method="post">
-  Last name: <input type="text" name="last_name"><br>
+<div id="delete">
+Which contact would you like to delete?
+<form action="/contacts/:id" method="delete">
+  Cust ID: <input type="text" name="id"><br>
   <input type="submit" name="Submit">
 </form>
-
-
-<a href="/">Back to Main Menu</a>
-
-  <% info_type = [params[:last_name]]%>
-  <%who = [params[:text]]%>
-  <% @@rolodex.delete_contact(info_type, who) %>
-  <p>Contact deleted</p>
-
-<a href="/">Back to Main Menu</a>
+</div>

@@ -6,7 +6,7 @@ require 'sinatra'
 @@rolodex = Rolodex.new
 
 get "/" do
-  @crm_app_name = "The new CRM"
+  @crm_app_name = "The new sad CRM"
   erb :index
 end 
 

@@ -55,7 +55,7 @@ table {
 
 html {
   /*http://cthoward.wordpress.com/powerpoint/powerpoint-backgrounds/ppt-gallery1/*/
-  background-color: white;  
+  background-color: #D6F2B1; 
   -webkit-background-size: cover; /*#chrom and safiri*/
   -moz-background-size: c; /*#firefox*/
   -o-background-size: cover; /*#mozilla*/
@@ -64,7 +64,7 @@ html {
 
 h1, h2,h3,h4,h6, p, a
 {
-    font-family: arial,Helvetica,Arial, sans-serif;
+    font-family: impact, arial,Helvetica,Arial, sans-serif;
     color: #002200;
 }
 
@@ -73,6 +73,8 @@ header {
   width:100%;
   position:fixed;
   top:0px;
+  background-color: white;
+  border-bottom: 1px solid #F2EAC6;
 }
 
 header img {
@@ -82,9 +84,10 @@ header img {
 
 header h1 { 
   display: inline-block;
+  position: static;
   font-size: 5ex;
-  margin-top: -8%;
   margin-left: -20px;
+  margin-top: -100px;
   font-family: Garamond, palatino, sans-serif;
 }
 
@@ -94,9 +97,14 @@ header h4{
   padding-top: 10px;
 }
 
+hr {
+  position: relative;
+  margin-left:150px;
+}
 
 nav {
   border-bottom: 1px double #191919;
+  border-top: 1px double #00AB02;
   bottom: 5%;
   position: absolute;
   width: 100%;
@@ -110,13 +118,10 @@ nav li{
   text-align: center;
 }
 
-hr {
-  position: static;
-}
 .erb {
   position: relative;
   top: 120px;
-  margin: 10px;
+  margin: 2px;
   width: 920px;
   left: 10%;
   padding: 20px;
@@ -130,25 +135,31 @@ hr {
 
 .erb p {
   font-size: 25px;
-  padding: 10px;
   text-align: center;
+}
+
+.erb ul{
+position: relative;
+  width: 65%;
+  padding: 2px;
+  left: 20%;
+  margin-top: 25px;
 }
 
 .erb li {
   position: relative;
-  width: 65%;
-  /*list-style-type: square;*/
-  padding: 2px;
-  left: 20%;
 
 }
 
 #menu li {
   padding: 10px;
   margin: 15px;
-  width: 50%;
-  background-color: #BF8136;
-  color: #DFAA36;
+  width: 50%;  
+  fourground-color: #9C612E;
+  background: url(white_wave.png) center center fixed;
+  background-opacity: 0.1;
+
+  color: #BF8136;
   text-align: left;
   border-top-right-radius: 100px;
   border: 2px  black;
@@ -162,20 +173,25 @@ hr {
 }
 a {
     text-decoration: none;
-  color: black;
+  color: #402813;
   
 }
 footer {
   background: url(cartographer.png) center center fixed;
-    position: absolute;
+  position: absolute;
   bottom: 0;
   background-color: #065A02;
-  /*opacity: 0.6;*/
   width: 100%;
   padding: 5px;
   height: 5%; 
 }
 
-footer p {
+#contact {
+  display: inline-block;
   float: right;
+  color: #045802;
+}
+#address{
+  display: inline-block;
+  color: #045802;
 }

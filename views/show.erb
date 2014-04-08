@@ -1,0 +1,11 @@
+<h1>contacts deleted</h1>
+<div id="viweone">
+  first name: <%= @contact.first_name %>
+  last name": <%= @contact.last_name %>
+  email: <%= @contact.email %>
+  note: <%= @contact.notes %>
+  <br>
+  <a href="/contacts/<%= @contact.id %>/edit">EDIT</a>
+  <br>
+  <a href="/contacts/<%= @contact.id %>/delete">DELETE</a>
+</div>

@@ -33,15 +33,15 @@ get "/contacts/new" do
   erb :new_contact
 end
 
-
 get "/contacts/:id/edit" do
-  "Modify existing contact"
+  @contact = Contact.get(params[:id])
+  erb :edit
 end
 
 get "/contacts/:id" do
   @contact = Contact.get(params[:id].to_i)
   if @contact
-    erb :show_contact
+    erb :show
   else
     raise Sinatra::NotFound
   end
@@ -52,6 +52,7 @@ get "/contacts/attribute" do
 end
 
 get "/contacts/:id/delete" do
+  @contacts = Contact.get(params[:id])
   erb :delete
 end
 
@@ -71,17 +72,21 @@ post "/contacts" do
   redirect to('/contacts')
 end
 
-put "/contacts/:id/edit" do
-  @contacts = Contact.get(:id)
+put "/contacts/:id" do
+  @contact = Contact.get(params[:id].to_i)
   if @contact
-    @contacts.save
+    @contact.first_name = params[:first_name]
+    @contact.last_name = params[:last_name]
+    @contact.email = params[:email]
+    @contact.notes = params[:notes]
+
+    @contact.save
     redirect to('/contacts')
   else
     raise Sinatra::NotFound
   end
 
 end
-
 
 delete '/contacts/:id' do
   @contact = Contact.get(:id)
